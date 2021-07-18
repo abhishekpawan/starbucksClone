@@ -1,0 +1,254 @@
+/* Responsive NavBar */
+/* 
+.icon{
+    display: none;
+}
+1
+@media screen and (max-width: 768px) {
+    .right-container a:not(:first-child) {display: none;}
+    .right-container a.icon {
+      float: right;
+      display: block;
+      color: black;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .right-container.responsive {
+        position: relative;
+    }
+    .right-container.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .right-container.responsive a {
+      
+    }
+  } */
+  /* fake navbaar */
+@media(max-width: 1024px){
+
+  .navbar{
+    height: 72px;
+    padding: 0px 16px;
+  }
+  #hover,.sign-in,.join-now{
+    display: none;
+  }
+
+  .logo img{
+    height: 37px;
+    width: 37px;
+  }
+  #fake-icon{
+    display: block;
+    color: rgba(0,0,0,.56);
+    padding-right: 4px;
+  }
+
+}
+   /* fake navbaar */
+  
+
+
+
+
+
+  /* Responsive NavBar */
+
+  @media (max-width: 768px) {
+    /* first section */
+  
+    .text {
+      width: 100%;
+      padding: 32px 24px;
+      line-height: 2rem;
+      font-size: medium;
+    }
+  
+    /* second sectiom  */
+  
+    .second {
+      display: table;
+    }
+    .second-text-box {
+      display: table-footer-group;
+    }
+    .first-image {
+      display: table-header-group;
+    }
+  
+    .second-text {
+      padding: 32px 16px;
+      width: 100%;
+    }
+    .second-text a {
+      font-size: small;
+    }
+  
+    /* third section */
+  
+    .third {
+      display: table;
+    }
+    .third-text-box {
+      display: table-footer-group;
+    }
+    .second-image {
+      display: table-header-group;
+    }
+  
+    .third-text {
+      padding: 32px 16px;
+      width: 100%;
+    }
+    .third-text h1 {
+      letter-spacing: 0.3rem;
+    }
+    .third p {
+      font-size: 1.3rem;
+    }
+    .third a {
+      font-size: small;
+    }
+  
+    /* fourth section*/
+  
+    .third {
+      display: table;
+    }
+    .fourth-text-box {
+      display: table-footer-group;
+    }
+    .third-image {
+      display: table-header-group;
+    }
+  
+    .third-text {
+      padding: 32px 16px;
+      width: 100%;
+    }
+    .third-text h1 {
+      letter-spacing: 0.3rem;
+    }
+    .third p {
+      font-size: 1.3rem;
+    }
+  
+    /* fifth section (part 1)*/
+  
+    .fourth {
+      display: table;
+    }
+    .fourth-right {
+      display: table-footer-group;
+    }
+    .fourth-left {
+      display: table-header-group;
+    }
+  
+    .fourth-text {
+      background-color: #d4e9e2;
+      width: 100%;
+    }
+    .fourth p {
+      width: 100%;
+    }
+    .fourth a {
+      font-size: small;
+    }
+  
+    .margin{
+        padding-top: 32px;
+    }
+  
+    /*sixth section*/
+    .second {
+        display: table;
+    }
+    .sixth-image{
+        display: table-header-group;
+    }
+    .seventh-text-box{
+        display: table-footer-group;
+    }
+    /* footer */
+    .footer-box{
+        padding: 0px 16px;
+    }
+    /* footer */
+
+    /* footer (policy) */
+
+    .policy {
+        display: flex;
+        flex-direction: column;
+    }
+    .policy span{
+        display: none;
+    }
+    .policy a{
+        font-size: 0.9rem;
+        padding: 0;
+        padding: 8px 0;
+        margin-bottom: 4px;
+    }
+
+    .policy a:hover{
+        text-decoration: underline;
+    }
+
+    /* footer (policy) */
+
+  }
+
+  @media (max-width:1024px){
+
+    /* fake-footer (dropdown) */
+
+    .fake{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .footer{
+      padding-top: 0;
+    }
+    .link a{
+      display: none;
+    }
+    .link{
+      display: flex;
+      flex-direction: column;
+      padding-top: 0;
+    }
+    #link-header,.careers,.social-impact,.for-partners,.order{
+      margin-left: 0px;
+      font-size: 1rem;
+    }
+    #link-header{
+      margin-top: 36px;
+    }
+    .about-us{
+      margin-top: 0;
+    }
+
+    .fakedrop{
+      display: flex;
+      flex-direction: row;
+      margin: 36px 0px 60px 0px ;
+    }
+    .fakedropdiv .fas{
+      display: block;
+      color: black;
+      padding-right: 4px;
+      font-size: larger;
+    }
+
+    hr{
+      margin-top: 0px;
+    }
+
+    /* fake-footer (dropdown) */
+  }
