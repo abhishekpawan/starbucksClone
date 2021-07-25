@@ -90,23 +90,25 @@ header {
 
 .sign-in:hover {
   background-color: #f0f0f0;
+  color: black
 }
 
 .join-now:hover {
   background-color: #4c4c4c;
+  color: white;
 }
 
 /* Navigation-bar */
 
 /* container univarsal */
 
-.container {
+.container1 {
   max-width: 1440px;
   color: #1e3932;
   margin: auto;
 }
 
-.container a {
+.container1 a {
   text-decoration: none;
   border-radius: 50px;
   border: 1px solid #1e3932;
@@ -117,9 +119,10 @@ header {
   color: #1e3932;
 }
 
-.container a:hover {
+.container1 a:hover {
   background-color: #c1d7d0e2;
   text-decoration: none;
+  color: #1e3932;
 }
 
 /* container univarsal */
@@ -339,6 +342,44 @@ header {
 
 /* sixth section */
 
+/* footer collapse section */
+
+.front{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 16px 8px 0px;
+}
+
+.front p{
+  font-size: small;
+}
+.front i{
+  font-size: large;
+}
+
+#collapse-links a{
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+  font-size: large;
+  color: rgb(124, 124, 124);
+  text-decoration: none;
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 0;
+  width: auto;
+
+}
+#collapse-links a:hover{
+  color: black;
+}
+
+
+
+/* footer collapse section */
+
 /* footer section */
 
 .fakedrop{
@@ -353,7 +394,7 @@ header {
 
 .footer-box {
   max-width: 1440px;
-  margin: auto;
+  margin: 0;
   padding: 40px;
 }
 .link {

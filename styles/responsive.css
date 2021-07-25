@@ -207,7 +207,7 @@
 
     /* fake-footer (dropdown) */
 
-    .fake{
+    /* .fake{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -248,7 +248,7 @@
 
     hr{
       margin-top: 0px;
-    }
+    } */
 
     /* fake-footer (dropdown) */
   }
