@@ -1,60 +1,17 @@
-/* Responsive NavBar */
-/* 
-.icon{
-    display: none;
-}
-1
-@media screen and (max-width: 768px) {
-    .right-container a:not(:first-child) {display: none;}
-    .right-container a.icon {
-      float: right;
-      display: block;
-      color: black;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .right-container.responsive {
-        position: relative;
-    }
-    .right-container.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .right-container.responsive a {
-      
-    }
-  } */
-  /* fake navbaar */
+ /* Responsive NavBar */
+
 @media(max-width: 1024px){
 
   .navbar{
     height: 72px;
-    padding: 0px 16px;
-  }
-  #hover,.sign-in,.join-now{
-    display: none;
+    padding: 0px 24px;
   }
 
-  .logo img{
-    height: 37px;
-    width: 37px;
+  .left-container img{
+    width: 38px;
   }
-  #fake-icon{
-    display: block;
-    color: rgba(0,0,0,.56);
-    padding-right: 4px;
-  }
-
-}
-   /* fake navbaar */
   
-
-
-
-
-
+}
   /* Responsive NavBar */
 
   @media (max-width: 768px) {

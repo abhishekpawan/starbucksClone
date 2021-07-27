@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" href="images/logo.png">
     <script src="https://kit.fontawesome.com/a017225704.js" crossorigin="anonymous"></script>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
@@ -16,24 +17,57 @@
 
 <body>
     <header>
-        <nav class="navbar" >
+        <nav class="navbar">
             <div class="left-container">
                 <a class="logo" href="#">
                     <img src="images/logo.png" alt="starbucks_logo" width="51">
                 </a>
-                <a id="hover" class="left-link" href="#">MENU</a>
-                <a id="hover" class="left-link" href="#">REWARDS</a>
-                <a id="hover" class="left-link" href="#">GIFT CARDS</a>
+                <a id="hover" class="left-link d-none d-lg-block" href="#">MENU</a>
+                <a id="hover" class="left-link d-none d-lg-block" href="#">REWARDS</a>
+                <a id="hover" class="left-link d-none d-lg-block" href="#">GIFT CARDS</a>
             </div>
-            <div  class="right-container" id="myTopnav">
-                <a><i id=fake-icon class="fas fa-bars "></i> </a>
+            <div class="right-container d-none d-lg-block" id="myTopnav">
                 <a id="hover" class="right-link" href=""> <i class="fas fa-map-marker-alt"></i> Find a store</a>
                 <a class="sign-in" href="">Sign in</a>
                 <a class="join-now" href="">Join now</a>
-                <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                  </a> -->
             </div>
+            <a class="nav-click d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas"><i id=fake-icon class="fas fa-bars"></i> </a>
+
+            <!-- responsive offcanvas -->
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas">
+                <div id="offcanvas-header">
+                    <a type="button" id="close" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></a>
+                </div>
+                <div id="offcanvas-body">
+                    <div class="menu" type="button">
+                        <a class="">Menu</a>
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+
+                    <a class="col-3" href="#">Rewards</a>
+                    <a class="col-3" href="#">Gift Cards</a>
+                </div>
+                <div class="hr"></div>
+
+                <div id="offcanvas-bottom">
+                    <div>
+                        <a class="sign-in" href="">Sign in</a>
+                        <a class="join-now" href="">Join now</a>
+                    </div>
+                    <a id="hover" class="right-link " href=""> <i class="fas fa-map-marker-alt"></i> Find a store</a>
+                </div>
+
+                <!-- menu offcanvas -->
+                
+                <!-- <div class="offcanvas offcanvas-top" tabindex="-1" id="mennnu-offcanvas" aria-labelledby="offcanvasTopLabel">
+                        <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div> -->
+            </div>
+
         </nav>
     </header>
 
@@ -126,13 +160,68 @@
         <div class="bottom">
             <p>*At participating stores. Some restrictions apply. See <a href="">starbucks.com/rewards.</a></p>
         </div>
-</div>
-        <div class="footer">
-            <div class="footer-box">
-                <div class="fake d-none d-md-block">
-                    <div class="link">
-                        <div class="about-us">
-                            <p id="link-header">About Us</p>
+    </div>
+    <div class="footer">
+        <div class="footer-box">
+            <div class="fake d-none d-md-block">
+                <div class="link">
+                    <div class="about-us">
+                        <p id="link-header">About Us</p>
+                        <a href="">Our Heritage</a>
+                        <a href="">Our Coffee</a>
+                        <a href="">Stories and News</a>
+                        <a href="">Investor Standards</a>
+                        <a href="">Policies and Standards</a>
+                        <a href="">Customer Service</a>
+                    </div>
+                    <div class="careers">
+                        <p id="link-header">Careers</p>
+                        <a href=""> Culture and Values</a>
+                        <a href="">Inclusion, Diversity, and Equity
+                        </a>
+                        <a href="">College Achievement Plan
+                        </a>
+                        <a href="">U.S. Careers
+                        </a>
+                        <a href="">International Careers</a>
+                    </div>
+                    <div class="social-impact">
+                        <p id="link-header">Social Impact</p>
+                        <a href="">Ethical Sourcing</a>
+                        <a href="">Leading in Sustainability</a>
+                        <a href="">Strengthening Communities</a>
+                        <a href="">Creating Opportunities</a>
+                        <a href="">Global Social Impact Report</a>
+                    </div>
+                    <div class="for-partners">
+                        <p id="link-header">For buisness partners</p>
+                        <a href="">Landlord Support Center</a>
+                        <a href="">Suppliers</a>
+                        <a href="">Corporate Gift Card Sales</a>
+                        <a href="">Office and Foodservice Coffee</a>
+                    </div>
+                    <div class="order">
+                        <p id="link-header" href="">Order and Pickup</p>
+                        <a href="">Order on the App</a>
+                        <a href="">Order on the Web</a>
+                        <a href="">Delivery</a>
+                        <a href="">Order and Pickup Options</a>
+                        <a href="">Explore and Find Coffee for Home</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer accordian -->
+
+            <div class="accordion d-block d-md-none" id="accordion">
+                <div>
+                    <div class="front" data-bs-toggle="collapse" data-bs-target="#aboutus" type="button">
+                        <p id="link-header">About Us</p>
+                        <i class="fas fa-chevron-down "></i>
+                    </div>
+                    <div class="collapse" id="aboutus" data-bs-parent="#accordion">
+                        <div class="col-4" id="collapse-links">
                             <a href="">Our Heritage</a>
                             <a href="">Our Coffee</a>
                             <a href="">Stories and News</a>
@@ -140,34 +229,63 @@
                             <a href="">Policies and Standards</a>
                             <a href="">Customer Service</a>
                         </div>
-                        <div class="careers">
-                            <p id="link-header">Careers</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="front" data-bs-toggle="collapse" data-bs-target="#careers" type="button">
+                        <p id="link-header">Careers</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="collapse" id="careers" data-bs-parent="#accordion">
+                        <div class="col-4" id="collapse-links">
                             <a href=""> Culture and Values</a>
-                            <a href="">Inclusion, Diversity, and Equity
-                            </a>
-                            <a href="">College Achievement Plan
-                            </a>
-                            <a href="">U.S. Careers
-                            </a>
+                            <a href="">Inclusion, Diversity, and Equity</a>
+                            <a href="">College Achievement Plan</a>
+                            <a href="">U.S. Careers </a>
                             <a href="">International Careers</a>
                         </div>
-                        <div class="social-impact">
-                            <p id="link-header">Social Impact</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="front" data-bs-toggle="collapse" data-bs-target="#social-impact" type="button">
+                        <p id="link-header">Social Impact</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="collapse" id="social-impact" data-bs-parent="#accordion">
+                        <div class="col-4" id="collapse-links">
                             <a href="">Ethical Sourcing</a>
                             <a href="">Leading in Sustainability</a>
                             <a href="">Strengthening Communities</a>
                             <a href="">Creating Opportunities</a>
                             <a href="">Global Social Impact Report</a>
                         </div>
-                        <div class="for-partners">
-                            <p id="link-header">For buisness partners</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="front" data-bs-toggle="collapse" data-bs-target="#for-partners" type="button">
+                        <p id="link-header">For Business Partners</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="collapse" id="for-partners" data-bs-parent="#accordion">
+                        <div class="col-4" id="collapse-links">
                             <a href="">Landlord Support Center</a>
                             <a href="">Suppliers</a>
                             <a href="">Corporate Gift Card Sales</a>
                             <a href="">Office and Foodservice Coffee</a>
                         </div>
-                        <div class="order">
-                            <p id="link-header" href="">Order and Pickup</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="front" data-bs-toggle="collapse" data-bs-target="#order" type="button">
+                        <p id="link-header">Order and Pickup</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="collapse" id="order" data-bs-parent="#accordion">
+                        <div class="col-4" id="collapse-links">
                             <a href="">Order on the App</a>
                             <a href="">Order on the Web</a>
                             <a href="">Delivery</a>
@@ -175,125 +293,40 @@
                             <a href="">Explore and Find Coffee for Home</a>
                         </div>
                     </div>
-                   
-                </div> 
-
-                <!-- Footer accordian -->
-
-                <div class="accordion d-block d-md-none" id="accordion">
-                    <div>
-                        <div class="front" data-bs-toggle="collapse" data-bs-target="#aboutus" type="button" >
-                            <p id="link-header">About Us</p>
-                        <i class="fas fa-chevron-down " ></i>
-                        </div>
-                        <div class="collapse" id="aboutus" data-bs-parent="#accordion">
-                            <div class="col-4" id="collapse-links">
-                                <a href="">Our Heritage</a>
-                                <a href="">Our Coffee</a>
-                                <a href="">Stories and News</a>
-                                <a href="">Investor Standards</a>
-                                <a href="">Policies and Standards</a>
-                                <a href="">Customer Service</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="front"  data-bs-toggle="collapse" data-bs-target="#careers" type="button" >
-                            <p id="link-header">Careers</p>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="collapse" id="careers" data-bs-parent="#accordion">
-                            <div class="col-4"  id="collapse-links">
-                                <a href=""> Culture and Values</a>
-                            <a href="">Inclusion, Diversity, and Equity</a>
-                            <a href="">College Achievement Plan</a>
-                            <a href="">U.S. Careers </a>
-                            <a href="">International Careers</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="front"  data-bs-toggle="collapse" data-bs-target="#social-impact" type="button" >
-                            <p id="link-header">Social Impact</p>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="collapse" id="social-impact" data-bs-parent="#accordion">
-                            <div class="col-4"  id="collapse-links">
-                                <a href="">Ethical Sourcing</a>
-                            <a href="">Leading in Sustainability</a>
-                            <a href="">Strengthening Communities</a>
-                            <a href="">Creating Opportunities</a>
-                            <a href="">Global Social Impact Report</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="front"  data-bs-toggle="collapse" data-bs-target="#for-partners" type="button">
-                            <p id="link-header">For Business Partners</p>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="collapse" id="for-partners" data-bs-parent="#accordion">
-                            <div class="col-4"  id="collapse-links">
-                                <a href="">Landlord Support Center</a>
-                                <a href="">Suppliers</a>
-                                <a href="">Corporate Gift Card Sales</a>
-                                <a href="">Office and Foodservice Coffee</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="front"  data-bs-toggle="collapse" data-bs-target="#order" type="button">
-                            <p id="link-header">Order and Pickup</p>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="collapse" id="order" data-bs-parent="#accordion">
-                            <div class="col-4"  id="collapse-links">
-                                <a href="">Order on the App</a>
-                            <a href="">Order on the Web</a>
-                            <a href="">Delivery</a>
-                            <a href="">Order and Pickup Options</a>
-                            <a href="">Explore and Find Coffee for Home</a>
-                        </div>
-                    </div>
                 </div>
-                </div>
-
-
-                <!-- Footer accordian -->
-
-
-
-
-                <hr>
-
-                <div class="social-links">
-                    <a href="https://open.spotify.com/user/starbucks"> <img src="images/icons/sp.png" alt=""> </a>
-                    <a href="https://facebook.com/starbucks"> <img src="images/icons/fb.png" alt=""> </a>
-                    <a href="https://www.pinterest.com/starbucks/"> <img src="images/icons/pi.png" alt=""> </a>
-                    <a href="https://instagram.com/starbucks"> <img src="images/icons/ig.png" alt=""> </a>
-                    <a href="https://www.youtube.com/starbucks"> <img src="images/icons/yt.png" alt=""> </a>
-                    <a href="https://twitter.com/starbucks/"> <img src="images/icons/tw.png" alt=""> </a>
-
-                </div>
-
-                <div class="policy">
-                    <a href="">Privacy policy</a><span>|</span>
-                    <a href="">Terms of Use</a><span>|</span>
-                    <a href="">CA Supply Chain Act</a><span>|</span>
-                    <a href="">Submit Your Idea</a><span>|</span>
-                    <a href="">Cookie Prefrences</a>
-                </div>
-                <div class="last-line">© 2021 Starbucks Coffee Company. All rights reserved.</div>
             </div>
 
-            
+
+            <!-- Footer accordian -->
+
+            <hr>
+
+            <div class="social-links">
+                <a href="https://open.spotify.com/user/starbucks"> <img src="images/icons/sp.png" alt=""> </a>
+                <a href="https://facebook.com/starbucks"> <img src="images/icons/fb.png" alt=""> </a>
+                <a href="https://www.pinterest.com/starbucks/"> <img src="images/icons/pi.png" alt=""> </a>
+                <a href="https://instagram.com/starbucks"> <img src="images/icons/ig.png" alt=""> </a>
+                <a href="https://www.youtube.com/starbucks"> <img src="images/icons/yt.png" alt=""> </a>
+                <a href="https://twitter.com/starbucks/"> <img src="images/icons/tw.png" alt=""> </a>
+
+            </div>
+
+            <div class="policy">
+                <a href="">Privacy policy</a><span>|</span>
+                <a href="">Terms of Use</a><span>|</span>
+                <a href="">CA Supply Chain Act</a><span>|</span>
+                <a href="">Submit Your Idea</a><span>|</span>
+                <a href="">Cookie Prefrences</a>
+            </div>
+            <div class="last-line">© 2021 Starbucks Coffee Company. All rights reserved.</div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <!-- <script>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- <script>
             function myFunction() {
               var x = document.getElementById("myTopnav");
               if (x.className === "right-container") {

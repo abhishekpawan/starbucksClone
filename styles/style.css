@@ -10,9 +10,6 @@ body {
 
 /* Navigation-bar */
 
-#fake-icon{
-  display: none;
-}
 
 header {
   box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 7%);
@@ -96,6 +93,78 @@ header {
 .join-now:hover {
   background-color: #4c4c4c;
   color: white;
+}
+
+
+/* responsive off-canvas */
+
+#fake-icon{
+  color: rgba(0,0,0,.56);
+    font-size: larger;
+}
+
+#offcanvas{
+  width: 80%;
+  border-left: 0px;
+}
+
+#offcanvas-header{
+  display: flex;
+  justify-content: flex-end;
+  height: 72px;
+  align-items: center;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 7%);
+  position: relative;
+
+}
+#close{
+  padding-right: 70px;
+}
+
+#offcanvas-body{
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu i{
+  font-size: large;
+  padding-right: 40px;
+
+}
+
+#offcanvas-body a{
+  font-size: large;
+  padding: 16px 32px;
+  color: black;
+  text-decoration: none;
+}
+
+.hr{
+  margin: 16px 32px 32px;
+  border: none;
+  border-top: 2px solid rgba(0,0,0,.1);
+}
+
+#offcanvas-bottom{
+  margin: 0px 24px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+#hover{
+  margin: 24px 8px;
+  padding: px;
+}
+
+#hover i{
+  font-size: larger;
 }
 
 /* Navigation-bar */
@@ -375,7 +444,6 @@ header {
 #collapse-links a:hover{
   color: black;
 }
-
 
 
 /* footer collapse section */
