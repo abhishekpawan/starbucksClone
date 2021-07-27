@@ -135,7 +135,7 @@ header {
 
 .menu i{
   font-size: large;
-  padding-right: 40px;
+  padding-right: 39px;
 
 }
 
@@ -166,6 +166,26 @@ header {
 #hover i{
   font-size: larger;
 }
+
+/* nested menu accordian */
+
+#menu-body{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+#menu-body a{
+  margin: 0px 20px 0px;
+  font-size: large;
+  padding:  16px 16px;
+  text-decoration: none;
+  color: white;
+}
+#menu-body a:hover{
+  color: #ddd;
+}
+
 
 /* Navigation-bar */
 
